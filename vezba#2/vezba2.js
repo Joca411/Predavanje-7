@@ -21,3 +21,25 @@ if (bojaTexta == "plava") {
 } else {
 	dugme.style.color = "white";
 }
+
+// Funkcija za proveru unosa broja
+function validanBroj(vrednost) {
+	var broj = parseInt(vrednost);
+	return !isNaN(broj) && broj >= 50;
+}
+
+// Unos visine
+var visina = prompt("Unesite visinu dugmeta (minimalno 50px):");
+if (!validanBroj(visina)) {
+	alert("Uneli ste pogrešnu vrednost za visinu!");
+} else {
+	dugme.style.height = visina + "px";
+}
+
+// Unos širine
+var sirina = prompt("Unesite širinu dugmeta (minimalno 50px):");
+if (!validanBroj(sirina)) {
+	alert("Uneli ste pogrešnu vrednost za širinu!");
+} else {
+	dugme.style.width = sirina + "px";
+}
