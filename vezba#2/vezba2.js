@@ -33,6 +33,7 @@ if (visina > 50) {
 // Unos širine
 var sirina = prompt("Unesite širinu dugmeta (minimalno 50px):");
 sirina = sirina.toLowerCase();
+
 if (sirina > 50) {
 	dugme.style.width = sirina + "px";
 }
